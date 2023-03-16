@@ -3,7 +3,8 @@
 //snack1();
 //snack2();
 //snack3();
-snack4();
+//snack4();
+snack5();
 //snack10();
 
 //SNACK 1
@@ -59,7 +60,7 @@ void snack3()
 
 }
 
-//SNACK 3
+//SNACK 4
 void snack4()
 {
     int sum = 0;
@@ -76,6 +77,14 @@ void snack4()
     Console.WriteLine("La media dei numeri da 2 a 10 è " + media);
 }
 
+//SNACK 5
+void snack5()
+{
+    int num = Convert.ToInt32(Console.ReadLine());
+    var even = num % 2 == 0;
+    var result = even ? num : num + 1;
+    Console.WriteLine(result);
+}
 
 //SNACK 10
 void snack10()
