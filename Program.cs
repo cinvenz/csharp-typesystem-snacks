@@ -1,7 +1,11 @@
-﻿snack1();
-snack2();
-snack10();
+﻿using System;
 
+//snack1();
+//snack2();
+snack3();
+//snack10();
+
+//SNACK 1
 void snack1()
 {
     int num1 = Convert.ToInt32(Console.ReadLine());
@@ -19,6 +23,7 @@ void snack1()
     }
 }
 
+//SNACK 2
 void snack2()
 {
     string str1 = Console.ReadLine() ?? "";
@@ -35,6 +40,25 @@ void snack2()
         Console.WriteLine(str1);
     }
 }
+
+//SNACK 3
+void snack3()
+{
+    int sum = 0;
+
+    for (int i = 0; i < 10; i++)
+    {
+        Console.Write("Inserisci il " + i + "° numero: ");
+        int num = Convert.ToInt32(Console.ReadLine());
+        sum = sum + num;
+
+    }
+    Console.Write("la somma è uguale a " + sum);
+
+
+}
+
+
 
 void snack10()
 {
