@@ -1,27 +1,31 @@
 ﻿using System;
 
-//snack1();
+snack1();
 //snack2();
 //snack3();
 //snack4();
-snack5();
+//snack5();
+//snack6();
 //snack10();
 
-//SNACK 1
+//SNACK 2
 void snack1()
 {
-    int num1 = Convert.ToInt32(Console.ReadLine());
-    int num2 = Convert.ToInt32(Console.ReadLine());
-
-    int sum = num1 - num2;
-
-    if (num1 == num2)
+    Console.WriteLine("Dammi il primo numero:");
+    int num1 = Convert.ToInt16(Console.ReadLine());
+    Console.WriteLine("Dammi il secondo numero:");
+    int num2 = Convert.ToInt16(Console.ReadLine());
+    if (num1 > num2)
     {
-        Console.WriteLine("Numbers are equal");
+        Console.WriteLine(num1);
+    }
+    else if (num1 == num2)
+    {
+        Console.WriteLine("I numeri sono uguali");
     }
     else
     {
-        Console.WriteLine(sum);
+        Console.WriteLine(num2);
     }
 }
 
@@ -85,6 +89,17 @@ void snack5()
     var result = even ? num : num + 1;
     Console.WriteLine(result);
 }
+
+//SNACK 6
+void snack6()
+{
+    string[] names = { "Marco", "Luigi", "Dario", "Camillo", "Ludovico", "Vincenzo", "Adrian", "Giovanni" };
+    string myName = Console.ReadLine().ToUpper().Trim();
+
+    Console.WriteLine(names.Contains(myName) ? "Prego, puoi partecipare alla festa!" : "Mi dispiace, ma non sei stato invitato.");
+}
+
+
 
 //SNACK 10
 void snack10()
