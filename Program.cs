@@ -5,7 +5,8 @@
 //snack3();
 //snack4();
 //snack5();
-snack6();
+//snack6();
+snack7();
 //snack10();
 
 //SNACK 2
@@ -106,6 +107,28 @@ void snack6()
     }
 }
 
+//SNACK 7
+void snack7()
+{
+    int[] numeriDispari = new int[6];
+
+    for (int i = 0; i < 6; i++)
+    {
+        Console.Write("Inserisci un numero: ");
+        int num = Convert.ToInt32(Console.ReadLine());
+
+        if (num % 2 != 0)
+        {
+            numeriDispari[i] = num;
+        }
+    }
+
+    Console.WriteLine("Numeri dispari inseriti:");
+    foreach (int dispari in numeriDispari)
+    {
+        Console.WriteLine(dispari);
+    }
+}
 
 //SNACK 10
 void snack10()
