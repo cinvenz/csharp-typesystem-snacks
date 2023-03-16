@@ -147,6 +147,21 @@ void snack8()
 
 }
 
+//SNACK 9
+void snack9()
+{
+    int[] numeri = { 5, 2, 1, 8, 4, 6, 3, 9 };
+    int sumDispari = 0;
+
+    for (int i = 1; i < numeri.Length; i += 2)
+    {
+        sumDispari += numeri[i];
+    }
+
+    Console.WriteLine("La somma degli elementi in posizione dispari è: " + sumDispari);
+
+}
+
 //SNACK 10
 void snack10()
 {
