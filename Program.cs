@@ -1,16 +1,17 @@
 ﻿using System;
 
-//snack1();
-//snack2();
-//snack3();
-//snack4();
-//snack5();
-//snack6();
-//snack7();
-//snack8();
-//snack9();
-//snack10();
+snack1();
+snack2();
+snack3();
+snack4();
+snack5();
+snack6();
+snack7();
+snack8();
+snack9();
+snack10();
 snack11();
+snack12();
 
 //SNACK 2
 void snack1()
@@ -226,6 +227,25 @@ void snack11()
         else
         {
             Console.WriteLine(str2);
+        }
+    }
+}
+
+//SNACK 12
+void snack12()
+{
+    Console.WriteLine("Dammi un numero");
+    int number = Convert.ToInt32(Console.ReadLine());
+    checkNum(number);
+    void checkNum(int number)
+    {
+        if (number % 2 == 0)
+        {
+            Console.WriteLine("Il numero è pari");
+        }
+        else
+        {
+            Console.WriteLine("Il numero è dispari");
         }
     }
 }
