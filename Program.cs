@@ -6,7 +6,8 @@
 //snack4();
 //snack5();
 //snack6();
-snack7();
+//snack7();
+snack8();
 //snack10();
 
 //SNACK 2
@@ -129,6 +130,21 @@ void snack7()
         if (i % 2 != 0) Console.Write($"{i}; ");
     }
     Console.WriteLine("");
+}
+
+//SNACK 8
+void snack8()
+{
+    int[] numeri = { 5, 2, 1, 8, 4, 6, 3, 9 };
+    int sumDispari = 0;
+
+    for (int i = 1; i < numeri.Length; i += 2)
+    {
+        sumDispari += numeri[i];
+    }
+
+    Console.WriteLine("La somma degli elementi in posizione dispari è: " + sumDispari);
+
 }
 
 //SNACK 10
