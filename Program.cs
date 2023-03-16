@@ -2,7 +2,8 @@
 
 //snack1();
 //snack2();
-snack3();
+//snack3();
+snack4();
 //snack10();
 
 //SNACK 1
@@ -58,8 +59,25 @@ void snack3()
 
 }
 
+//SNACK 3
+void snack4()
+{
+    int sum = 0;
+
+    for (int i = 2; i <= 10; i++)
+    {
+
+        sum = sum + i;
+
+    }
+
+    double media = sum / 9;
+    Console.WriteLine("La somma dei numeri da 2 a 10 è " + sum);
+    Console.WriteLine("La media dei numeri da 2 a 10 è " + media);
+}
 
 
+//SNACK 10
 void snack10()
 {
     int N = Convert.ToInt32(Console.ReadLine());
