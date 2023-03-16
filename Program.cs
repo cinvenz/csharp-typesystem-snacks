@@ -7,8 +7,10 @@
 //snack5();
 //snack6();
 //snack7();
-snack8();
+//snack8();
+//snack9();
 //snack10();
+snack11();
 
 //SNACK 2
 void snack1()
@@ -150,17 +152,33 @@ void snack8()
 //SNACK 9
 void snack9()
 {
-    int[] numeri = { 5, 2, 1, 8, 4, 6, 3, 9 };
-    int sumDispari = 0;
+    int[] numeri = new int[0];
+    int somma = 0;
+    int index = 0;
 
-    for (int i = 1; i < numeri.Length; i += 2)
+    while (somma < 50)
     {
-        sumDispari += numeri[i];
+        Console.Write("Inserisci un numero: ");
+        int num = Convert.ToInt32(Console.ReadLine());
+
+        int[] newArray = new int[numeri.Length + 1];
+
+        for (int i = 0; i < numeri.Length; i++)
+        {
+            newArray[i] = numeri[i];
+        }
+
+        newArray[newArray.Length - 1] = num;
+
+        numeri = newArray;
+        index++;
+
+        somma += num;
     }
 
-    Console.WriteLine("La somma degli elementi in posizione dispari è: " + sumDispari);
-
+    Console.WriteLine("La somma degli elementi è maggiore o uguale a 50.");
 }
+
 
 //SNACK 10
 void snack10()
@@ -183,5 +201,31 @@ void snack10()
         }
 
         Console.WriteLine();
+    }
+}
+
+//SNACK 11
+void snack11()
+{
+    Console.WriteLine("Prima Parola:");
+    string str1 = Console.ReadLine() ?? "";
+    Console.WriteLine("Seconda Parola:");
+    string str2 = Console.ReadLine() ?? "";
+    lenght(str1, str2);
+
+    void lenght(string str1, string str2)
+    {
+        if (str1.Length == str2.Length)
+        {
+            Console.WriteLine(str1 + " " + str2);
+        }
+        else if (str1.Length > str2.Length)
+        {
+            Console.WriteLine(str1);
+        }
+        else
+        {
+            Console.WriteLine(str2);
+        }
     }
 }
