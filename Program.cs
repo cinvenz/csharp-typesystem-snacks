@@ -124,10 +124,11 @@ void snack7()
     }
 
     Console.WriteLine("Numeri dispari inseriti:");
-    foreach (int dispari in numeriDispari)
+    foreach (int i in numeriDispari)
     {
-        Console.WriteLine(dispari);
+        if (i % 2 != 0) Console.Write($"{i}; ");
     }
+    Console.WriteLine("");
 }
 
 //SNACK 10
