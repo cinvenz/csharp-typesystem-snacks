@@ -1,11 +1,11 @@
 ﻿using System;
 
-snack1();
+//snack1();
 //snack2();
 //snack3();
 //snack4();
 //snack5();
-//snack6();
+snack6();
 //snack10();
 
 //SNACK 2
@@ -93,12 +93,18 @@ void snack5()
 //SNACK 6
 void snack6()
 {
-    string[] names = { "Marco", "Luigi", "Dario", "Camillo", "Ludovico", "Vincenzo", "Adrian", "Giovanni" };
-    string myName = Console.ReadLine().ToUpper().Trim();
-
-    Console.WriteLine(names.Contains(myName) ? "Prego, puoi partecipare alla festa!" : "Mi dispiace, ma non sei stato invitato.");
+    string[] names = { "Dario", "Francesco", "Giovanni", "Marco", "Vincenzo" };
+    Console.WriteLine("Dimmi il tuo nome");
+    string name = Console.ReadLine() ?? "";
+    if (names.Contains(name, StringComparer.OrdinalIgnoreCase))
+    {
+        Console.WriteLine("Sei invitato");
+    }
+    else
+    {
+        Console.WriteLine("Non sei stato invitato");
+    }
 }
-
 
 
 //SNACK 10
